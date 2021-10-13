@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Ordenando una pizza</title>
+ <meta charset="utf-8" />
+ <link rel="stylesheet" href="css/pollo.css" />
+</head>
+<body>
+<header id="box">
+ <h1 id="flashlight">
+ <span id="flash">ORDEN DE</span>
+ <span id="light">POLLO</span>
+ </h1>
+</header>
+<form action="javascript:void(0);" class="demoForm" id="polloForm">
+ <fieldset>
+ <legend>Combos y productos</legend>
+ <p>Combos:
+ <label><input type="radio" name="size" value="7.25" checked="checked"/>Super combo</label>
+ <label><input type="radio" name="size" value="5.75" />Combo personal</label>
+ <label><input type="radio" name="size" value="3.50" />Combo infantil</label>
+ <input type="hidden" name="sz_tot" value="0.00" />
+ </p>
+ <p id="pollo_toppings"><label>Productos:</label>
+ <label><input type="checkbox" name="Salad" value="1.50" />Ensalada</label>
+ <label><input type="checkbox" name="Fries" value="1.25" />Papa frita</label>
+ <label><input type="checkbox" name="Big piece" value="1.75" />Pieza de pollo grande</label>
+ <label><input type="checkbox" name="Medium Piece" value="1.50" />Pieza de pollo mediana</label>
+ <label><input type="checkbox" name="Small Piece" value="1.25" />Pieza de pollo pequeña</label>
+ <label><input type="checkbox" name="Big Soda" value="1.50" />Bebida grande</label>
+ <label><input type="checkbox" name="Medium Soda" value="1.25" />Bebida mediana</label>
+ <label><input type="checkbox" name="Small Soda" value="1" />Bebida pequeña</label>
+ <label><input type="checkbox" name="Coffe" value="0.50" />cafe</label>
+ <label><input type="checkbox" name="Deserts" value="1.25" />Postre</label>
+ <input type="hidden" name="tops_tot" value="0.00" />
+ </p>
+ <p id="sugerencia"><label>Sugerencias:</label><br>
+<input type="text" size=90 style="width:1000px; height: 120px;"></p>
+ <p>
+ <label>
+ Total: $<input type="text" name="total" class="num" value="0.00"
+readonly="readonly" />
+ </label>
+ </p>
+ <p>
+ <input type="submit" name="submit" value="Submit" />
+ </p>
+ </fieldset>
+</form>
+<script src="js/pollo.js"></script>
+</body>
+</html>
